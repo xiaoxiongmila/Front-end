@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+* method=”post”： 采用post方式提交数据
+* enctype=”multipart/form-data”：采用multipart格式上传文件，此时request头会显示 Content-Type:multipart/form-data;boundary=——WebKitFormBoundaryzr34cwJ67R95KQC9
+*action：标明上传的服务端处理地址
+*type=”file”：使用input的file控件上传
+*accept属性是HTML5的新属性，它规定了可通过文件上传提交的文件类型
+/-->
+<script src="jquery-1.12.4.min.js"></script>
+<form type="post" action="http://uploadUrl"  enctype=”multipart/form-data”>
+    <input name="file" type="file" accept="image/gif,png,jpg">
+    <input name="token" type="hidden">
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
