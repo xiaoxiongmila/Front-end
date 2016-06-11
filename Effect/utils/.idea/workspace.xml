@@ -20,7 +20,28 @@
     <favorites_list name="Cheer" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="bevel-background.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bevel-background.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-14.384615">
+              <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bank-card-format.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bank-card-format.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.006779661">
+              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -36,7 +57,6 @@
         <option value="$PROJECT_DIR$/cheer.js" />
         <option value="$PROJECT_DIR$/utils.js" />
         <option value="$PROJECT_DIR$/2.html" />
-        <option value="$PROJECT_DIR$/1.html" />
         <option value="$PROJECT_DIR$/js-ajax-fetch.html" />
         <option value="$PROJECT_DIR$/advanced-js-rethinking-async.html" />
         <option value="$PROJECT_DIR$/tootltips.html" />
@@ -52,6 +72,11 @@
         <option value="$PROJECT_DIR$/back-to-top.html" />
         <option value="$PROJECT_DIR$/money-to-capital.html" />
         <option value="$PROJECT_DIR$/js-float-is-not-correct.html" />
+        <option value="$PROJECT_DIR$/html-ppt.html" />
+        <option value="$PROJECT_DIR$/password-display-hide.html" />
+        <option value="$PROJECT_DIR$/1.html" />
+        <option value="$PROJECT_DIR$/bevel-background.html" />
+        <option value="$PROJECT_DIR$/bank-card-format.html" />
       </list>
     </option>
   </component>
@@ -61,10 +86,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="132" />
-    <option name="y" value="2" />
+    <option name="x" value="73" />
+    <option name="y" value="14" />
     <option name="width" value="1376" />
-    <option name="height" value="744" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -194,10 +219,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="132" y="2" width="1376" height="744" extended-state="0" />
-    <editor active="false" />
+    <frame x="73" y="14" width="1376" height="754" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22647059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22647059" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -235,6 +260,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="99" column="25" selection-start-line="99" selection-start-column="25" selection-end-line="99" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -242,6 +268,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -256,6 +283,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -263,6 +291,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -270,6 +299,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -277,6 +307,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="19" selection-start-line="25" selection-start-column="19" selection-end-line="25" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -291,6 +322,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19767442">
           <caret line="120" column="18" selection-start-line="120" selection-start-column="18" selection-end-line="120" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -303,6 +335,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -310,6 +343,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.36206895">
           <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -317,6 +351,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7965517">
           <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -324,6 +359,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42413792">
           <caret line="69" column="20" selection-start-line="69" selection-start-column="20" selection-end-line="69" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -338,6 +374,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-9.423077">
           <caret line="174" column="21" selection-start-line="174" selection-start-column="21" selection-end-line="174" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -345,6 +382,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.153846">
           <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -352,6 +390,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.1241379">
           <caret line="83" column="24" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -359,6 +398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231">
           <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -380,6 +420,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.230769">
           <caret line="22" column="10" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -387,6 +428,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.2793103">
           <caret line="83" column="4" selection-start-line="83" selection-start-column="4" selection-end-line="83" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bevel-background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.384615">
+          <caret line="34" column="9" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bank-card-format.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.006779661">
+          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
