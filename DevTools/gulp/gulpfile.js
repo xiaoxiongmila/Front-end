@@ -10,7 +10,9 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    postcss = require('gulp-postcss'),
+    shortColor = require('postcss-short-color');
 
 
 
