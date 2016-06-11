@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    var arr = [61, 22, 31, 4, 5];
+    //    //方法1
+    //    var max = 0;
+    //    arr.forEach(function (value, index) {
+    //        max = Math.max(value, max);
+    //    })
+    //
+    ////    alert(max);
+    //
+    //    //方法2
+    //    console.log(Math.max.apply(null, arr));
+    //
+    //    var arr = [61, 22, 31, 4, 5];
+    //    var arr2 = arr.map(function(value,index){
+    //        return function(){
+    //            alert(value);
+    //        }
+    //    })
+    //给object数组进行排序（排序条件是每个元素对象的属性个数）
+    //    var arr = [
+    //        {a:1, c:2, d:3, f:5, e:2},
+    //        {a:1},
+    //        {a:1, b:2, c: 3},
+    //        {a:1, b:2}
+    //    ];
+    //
+    //    function objectSort(a, b) {
+    //        var num1 = 0, num2 = 0;
+    //
+    //        for (var i in a) {
+    //            num1 += 1;
+    //        }
+    //        for (var j in b) {
+    //            num2 += 1;
+    //        }
+    //
+    //        return num1 < num2 ? -1 : 1;
+    //    }
+    //
+    //    //用类似冒泡的方式求解
+    //    (function(arr){
+    //        for(var j = 0; j < arr.length-1; j++){
+    //            var isSwap = false;
+    //            for(var i = j; i < arr.length - 1; i++){
+    //                if(objectSort(arr[i],arr[i+1]) > 0){
+    //                    var temp = arr[i];
+    //                    arr[i] = arr[i+1];
+    //                    arr[i+1] = temp;
+    //                    isSwap = true;
+    //                }
+    //            }
+    //            if(isSwap === false){
+    //                return;
+    //            }
+    //        }
+    //    })(arr);
+
+    //    //利用JavaScript打印出Fibonacci（斐波那契）数（不使用全局变量）
+    //    var fibonacci = (function () {
+    //        var arr = [0, 1];
+    //        return function () {
+    //            var num = arr[arr.length - 1],
+    //                    len = arr.length;
+    //            arr.push(arr[len - 1] + arr[len - 2]);
+    //            return num;
+    //        };
+    //    }());
+    //
+    //    //test
+    //    var i;
+    //    for (i = 0; i < 10; i++) {
+    //        console.log(fibonacci());
+    //    }
+    //    //1,1,2,3,5,8,13,21,34,55
+
+    //实现如下语法的功能：var a = (5).plus(3).minus(6); //2
+    //    Number.prototype.plus = function (num) {
+    //        return this + num;
+    //    };
+    //    Number.prototype.minus = function (num) {
+    //        return this - num;
+    //    };
+    //实现如下语法的功能：var a = add(2)(3)(4); //9
+    //    function add(x) {
+    //        return function (y) {
+    //            return function (z) {
+    //                return x + y + z;
+    //            };
+    //        };
+    //    }
+</script>
+</body>
+</html>
