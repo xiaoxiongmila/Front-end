@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //    // 只是为了获取XHR已经一团糟了!
+    //    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
+    //        request = new XMLHttpRequest();
+    //    } else if (window.ActiveXObject) { // IE
+    //        try {
+    //            request = new ActiveXObject('Msxml2.XMLHTTP');
+    //        }
+    //        catch (e) {
+    //            try {
+    //                request = new ActiveXObject('Microsoft.XMLHTTP');
+    //            }
+    //            catch (e) {}
+    //        }
+    //    }
+    //
+    //    // Open, send.
+    //    request.open('GET', 'https://davidwalsh.name/ajax-endpoint', true);
+    //    request.send(null);
+
+    // url (必填), options (可选)
+    // 处理返回值
+    fetch('/some/url').then(function(response) {
+
+    }).catch(function(err) {
+        // Error :(
+    });
+
+    // 使用链式调用进行更复杂的处理流程
+    fetch('/some/url').then(function(response) {
+        return //...
+    }).then(function(returnedValue) {
+        // ...
+    }).catch(function(err) {
+        // Error :(
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var AsyncScripts = function () {
+        function load() {
+            var args = arguments;
+            var head = document.getElementsByTagName('head')[0];
+            var js = document.createElement('script');
+            js.type = 'text/javascript';
+            js.src = args[0];
+            head.appendChild(js);
+            if (document.all) {
+                js.onreadystatechange = function () {
+                    if (js.readyState == 'loaded' || js.readyState == 'complete') {
+                        args[1] && args[1]();
+                    }
+                }
+            } else {
+                js.onload = function () {
+                    args[1] && args[1]();
+                }
+            }
+            js.onerror = function () {
+                args[2] && args[2]();
+            }
+        }
+        function execJSblock() {
+
+        }
+        return {
+            load: load,
+            exec: execJSblock
+        }
+    }();
+
+    AsyncScripts.load('http://cdn.famanoder.com/javascripts/lib/jquery0.js', function () {
+        alert($)
+    });
+</script>
+</body>
+</html>

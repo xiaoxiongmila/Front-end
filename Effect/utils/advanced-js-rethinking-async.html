@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+    //参考链接 http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html
+    //    function sleep(timeout) {
+    //        var dtd = $.Deferred;
+    //        setTimeout(dtd.resolve, timeout);
+    //        return dtd;
+    //    };
+
+    //等同于上面的写法
+
+    function sleep(timeout) {
+        return $.Deferred(function (dtd) {
+            setTimeout(dtd.resolve, timeout);
+        })
+    }
+    ;
+    //
+    //    console.time('sleep');
+    //    sleep(2000).done(function(){
+    //        console.timeEnd('sleep');
+    //    })
+
+    function loadImg(src) {
+        var dtd = $.Deferred(),
+                img = new Image;
+
+        img.onload = function () {
+            dtd.resolve(img);
+        };
+
+        img.onerror = function (e) {
+            dtd.reject(e);
+        }
+
+        img.src = src;
+
+        return dtd;
+    }
+
+    //    loadImg('http://www.baidu.com/favicon.ico').then(function(img){
+    //        $('body').prepend(img);
+    //    },function(){
+    //        alert('load error!!');
+    //    })
+
+    //5秒之后显示图片
+    //    sleep(5000).done(function(){
+    //        loadImg('http://www.baidu.com/favicon.ico').done(function(img){
+    //            $('body').prepend(img);
+    //        });
+    //    });
+
+    //the elegant way
+
+//    $.when(sleep(5000), loadImg('http://www.baidu.com/favicon.ico')).done(function (ignore, img) {
+//        $('body').prepend(img);
+//    })
+    var promise = new Promise(function(resolve, reject) {
+        setTimeout(function() {
+            if (true) {
+                resolve('ok');
+            } else {
+                reject(new Error('unexpected error'));
+            }
+        }, 2000);
+    });
+
+    promise.then(function(msg) {
+        // throw new Error('unexpected resolve error');
+        console.log(msg);
+    }).catch(function(err) {
+        console.error(err);
+    });
+</script>
+</body>
+</html>

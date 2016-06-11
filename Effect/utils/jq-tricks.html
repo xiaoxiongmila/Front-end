@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<script src="jquery-1.12.4.min.js"></script>
+<script>
+    //预加载图像
+    $.preloadImage = function() {
+        for (var i=0; i<arguments.length; i++) {
+            $('').attr('src',arguments[i]);
+        }
+    };
+
+    $.preloadImage('img-hover-on','img-hover-off');
+    //列高度相同
+    var $columns = $('.columns');
+    var height = 0;
+
+    $columns.each(function(){
+        if($(this).height() > height) {
+            height = $(this).height();
+        }
+    })
+
+    $columns.height(height);
+
+</script>
+</body>
+</html>

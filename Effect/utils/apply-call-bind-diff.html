@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .test {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+        }
+
+        #input {
+            margin-top: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test"></div>
+    <input type="text" value="复制到剪切板" id="input">
+    <script src="utils.js"></script>
+    <script>
+        var m = {
+            "x" : 1
+        };
+        function foo(y) {
+            alert(this.x + y);
+        }
+        foo.apply(m, [5]);
+        foo.call(m,5);
+        var foo1 = foo.bind(m, 5);
+        foo1();
+    </script>
+</body>
+</html>

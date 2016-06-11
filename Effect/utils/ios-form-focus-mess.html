@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //iOS，Safari浏览器，input等表单focus后fixed元素错位问题
+    if( /iPhone|iPod|iPad/i.test(navigator.userAgent) ) {
+        $(document).on('focus', 'input, textarea', function()
+        {
+            $('header').css("position", 'absolute');
+            $('footer').css("position", 'absolute');
+
+        });
+
+        $(document).on('blur', 'input, textarea', function()
+        {
+            $('header').css("position", 'fixed');
+            $('footer').css("position", 'fixed');
+
+        });
+    }
+</script>
+</body>
+</html>
