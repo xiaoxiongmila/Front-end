@@ -1,0 +1,32 @@
+.testing {
+  width: percentage(5/7);
+}
+
+$red: blue;
+$height: 20px;
+body {
+  background-color: $red;
+}
+@mixin block-center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#test {
+  width: $height * 10;
+  height: $height;
+  background-color: red;
+  @include block-center;
+}
+
+#test10 {
+  width: $height * 10;
+  height: $height;
+}
+
+#test13 {
+  width: $height * 100;
+  height: $height*50;
+}
+
