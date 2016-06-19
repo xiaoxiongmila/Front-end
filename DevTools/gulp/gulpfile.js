@@ -17,10 +17,10 @@ var gulp = require('gulp'),
 
 
 gulp.task('sass', function() {
-    return gulp.src('app/scss/**/*.scss') // Gets all files ending with .scss in app/scss and children dirs
+    return gulp.src('app/scss/**/*.scss')
         .pipe(sass())
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(gulp.dest('app/css'))
+        .pipe(gulp.dest('dist/css'))
         .pipe(cleanCSS())
         .pipe(notify({ message: 'Styles task complete' }))
         .pipe(browserSync.reload({
@@ -46,13 +46,9 @@ gulp.task('images', function() {return gulp.src('app/images/**/*.+(png|jpg|gif|s
 });
 gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('app/scss/**/*.scss', ['sass']);
-    // Reloads the browser whenever HTML or JS files change
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('app/js/**/*.js', browserSync.reload);
 });
-//gulp.task('watch', ['array', 'of', 'tasks', 'to', 'complete','before', 'watch'], function (){
-//    // ...
-//})
 
 gulp.task('browserSync', function() {
     browserSync({
