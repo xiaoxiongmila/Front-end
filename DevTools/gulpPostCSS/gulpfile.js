@@ -23,6 +23,8 @@ var gulp = require('gulp'),
 
 gulp.task('css', function() {
   var processors = [
+    cssnext,
+    precss,
     autoprefixer,
     cssnano
   ];
