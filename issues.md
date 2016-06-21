@@ -7,7 +7,15 @@
 
 
 ##二、PC端
+###Div中放不下如何出现横向滚动条,然后一直排过去
+####解决方法
+在最外层容器里面再套一次子div，宽度设置比父元素大，父元素设置`overflow-x： scroll`; 
+####在线DEMO
+[https://jsfiddle.net/xiaoxiongmila/4ox73ne7/](https://jsfiddle.net/xiaoxiongmila/4ox73ne7/ "https://jsfiddle.net/xiaoxiongmila/4ox73ne7/")
 
+请在真机上查看效果
+####参考链接：
+[Div中放不下如何出现横向滚动条,然后一直排过去](http://bbs.csdn.net/topics/390361567 "http://bbs.csdn.net/topics/390361567")
 ##三、移动端
 	
 
