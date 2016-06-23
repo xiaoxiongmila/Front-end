@@ -41,5 +41,11 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 `<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"> ` 
 ###参考链接：
 [去掉微信浏览器里的放大缩小按钮](http://blog.csdn.net/flyspace/article/details/39993103)
+## 使用REM 和 Spirtes背景图片错位
+###解决方法：
+使用`background-position`更为精准，代替原来的REM
+###参考链接
+[http://caibaojian.com/background-position-percent.html](http://caibaojian.com/background-position-percent.html "http://caibaojian.com/background-position-percent.html")
+
 #四、工具类
 
