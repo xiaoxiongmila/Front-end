@@ -15,14 +15,23 @@
 
 ##中英文混杂字体两端对齐
 一般的两端对齐是使用text-align:justify，但是text-align:justify一般情况下只针对英文管用。（因为css是老外设计的，老外在justify判断的时候，是根据单词直接的空格来的，中文两个汉字之间没有空格，所以大部分情况下text-align:justify不管用，所以这个属性大部分形同虚设！）。
-  
+
+### 解决方法： ###
+
 var box=document.getElementById("box");
 
 box.style.textAlign = "justify";
 
 box.style.letterSpacing = '-.15em';
 
-box.innerHTML = box.innerHTML.split("").join(" ");
+box.innerHTML =box.innerHTML.replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, '').split("").join(" ").replace(/\s{3}/g, " &nbsp; ");
+
+### 其他 ###
+text-align:justify;text-justify:distribute;/*ie7-8*/
+
+### 参考链接 ###
+[http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/](http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/ "http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/")
+
 #二、PC端
 ##Div中放不下如何出现横向滚动条,然后一直排过去
 ###解决方法
