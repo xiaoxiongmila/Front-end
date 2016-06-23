@@ -1,32 +1,19 @@
-.testing {
-  width: percentage(5/7);
-}
-
-$red: blue;
-$height: 20px;
-body {
-  background-color: $red;
-}
-@mixin block-center {
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
 
 #test {
-  width: $height * 10;
-  height: $height;
   background-color: red;
-  @include block-center;
+  display: box;
+  display: flex;
+  border-radius: 10px;
 }
 
-#test10 {
-  width: $height * 10;
-  height: $height;
+img {
+  filter: grayscale(0.9);
+}
+$grid-width: 40px;
+$gutter-width: 10px;
+
+@function grid-width($n) {
+  @return $n * $grid-width + ($n - 1) * $gutter-width;
 }
 
-#test13 {
-  width: $height * 100;
-  height: $height*50;
-}
-
+#sidebar { width: grid-width(5); }
