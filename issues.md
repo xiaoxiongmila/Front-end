@@ -16,7 +16,7 @@
 ##中英文混杂字体两端对齐
 一般的两端对齐是使用text-align:justify，但是text-align:justify一般情况下只针对英文管用。（因为css是老外设计的，老外在justify判断的时候，是根据单词直接的空格来的，中文两个汉字之间没有空格，所以大部分情况下text-align:justify不管用，所以这个属性大部分形同虚设！）。
 
-### 解决方法： ###
+### 解决方法 ###
 
 var box=document.getElementById("box");
 
@@ -40,7 +40,7 @@ text-align:justify;text-justify:distribute;/*ie7-8*/
 [https://jsfiddle.net/xiaoxiongmila/4ox73ne7/](https://jsfiddle.net/xiaoxiongmila/4ox73ne7/ "https://jsfiddle.net/xiaoxiongmila/4ox73ne7/")
 
 请在真机上查看效果
-###参考链接：
+###参考链接
 [Div中放不下如何出现横向滚动条,然后一直排过去](http://bbs.csdn.net/topics/390361567 "http://bbs.csdn.net/topics/390361567")
 
 ##canvas绘制圆环进度条出现模糊效果解决方案
@@ -56,15 +56,27 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 [https://jsfiddle.net/xiaoxiongmila/o4xvLryf/](https://jsfiddle.net/xiaoxiongmila/o4xvLryf/ "https://jsfiddle.net/xiaoxiongmila/o4xvLryf/")
 #三、移动端
 ## 微信浏览网页滑动页面的时候右下角出现缩放按钮
-###解决方法：
+###解决方法
 `<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0"> ` 
-###参考链接：
+###参考链接
 [去掉微信浏览器里的放大缩小按钮](http://blog.csdn.net/flyspace/article/details/39993103)
 ## 使用REM 和 Spirtes背景图片错位
-###解决方法：
+###解决方法
 使用`background-position`更为精准，代替原来的REM
 ###参考链接
 [http://caibaojian.com/background-position-percent.html](http://caibaojian.com/background-position-percent.html "http://caibaojian.com/background-position-percent.html")
 
 #四、工具类
+##GIT Bash尝试修改文件报错
+
+
+`fatal: Unable to create '/path/my_proj/.git/index.lock': File exists.If no other git process is currently running, this probably means a
+git process crashed in this repository earlier. Make sure no other git
+process is running and remove the file manually to continue.`
+
+###解决方法
+    rm -f ./.git/index.lock
+
+###参考链接
+[http://stackoverflow.com/questions/7860751/git-fatal-unable-to-create-path-my-project-git-index-lock-file-exists](http://stackoverflow.com/questions/7860751/git-fatal-unable-to-create-path-my-project-git-index-lock-file-exists "http://stackoverflow.com/questions/7860751/git-fatal-unable-to-create-path-my-project-git-index-lock-file-exists")
 
