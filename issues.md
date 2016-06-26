@@ -65,10 +65,22 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 使用`background-position`更为精准，代替原来的REM
 ###参考链接
 [http://caibaojian.com/background-position-percent.html](http://caibaojian.com/background-position-percent.html "http://caibaojian.com/background-position-percent.html")
+#四、框架、库类
+##React使用static关键字报错
+###解决办法
+使用Class properties transform插件，同时在.babelrc中删除"transform-es2015-classes"，增加"transform-class-properties"，同时删除`"transform-es2015-classes"`,不然依旧报凑
 
-#四、工具类
-##GIT Bash尝试修改文件报错
+示例：
+  
+` {
+  "plugins": ["transform-class-properties"]
+}`
 
+###参考链接
+[http://babeljs.io/docs/plugins/transform-class-properties/](http://babeljs.io/docs/plugins/transform-class-properties/ "http://babeljs.io/docs/plugins/transform-class-properties/")
+
+#五、工具类
+##GIT Bash尝试修改文件报错缺少类关键转换
 
 `fatal: Unable to create '/path/my_proj/.git/index.lock': File exists.If no other git process is currently running, this probably means a
 git process crashed in this repository earlier. Make sure no other git
