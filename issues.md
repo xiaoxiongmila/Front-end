@@ -68,7 +68,7 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 #四、框架、库类
 ##React使用static关键字报错
 ###解决办法
-使用Class properties transform插件，同时在.babelrc中删除"transform-es2015-classes"，增加"transform-class-properties"，同时删除`"transform-es2015-classes"`,不然依旧报凑
+使用Class properties transform插件，同时在.babelrc中删除"transform-es2015-classes"，增加"transform-class-properties"，同时删除`"transform-es2015-classes"`,不然依旧报错
 
 示例：
   
