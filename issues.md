@@ -45,7 +45,7 @@ text-align:justify;text-justify:distribute;/*ie7-8*/
 Bingo，真的可以。
 
 #二、PC端
-##Div中放不下如何出现横向滚动条,然后一直排过去
+##div中放不下如何出现横向滚动条,然后一直排过去
 ###解决方法
 在最外层容器里面再套一次子div，宽度设置比父元素大，父元素设置`overflow-x： scroll`; 
 ###在线DEMO
@@ -78,7 +78,7 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 ###参考链接
 [http://caibaojian.com/background-position-percent.html](http://caibaojian.com/background-position-percent.html "http://caibaojian.com/background-position-percent.html")
 #四、框架、库类
-##React使用static关键字报错
+##React使用static关键字报错缺少类关键转换
 ###解决办法
 使用Class properties transform插件，同时在.babelrc中删除"transform-es2015-classes"，增加"transform-class-properties"，同时删除`"transform-es2015-classes"`,不然依旧报错
 
@@ -117,7 +117,7 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 ###参考链接
 [https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html](https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html "https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html")
 #五、工具类
-##GIT Bash尝试修改文件报错缺少类关键转换
+##GIT Bash尝试修改文件报错
 
 `fatal: Unable to create '/path/my_proj/.git/index.lock': File exists.If no other git process is currently running, this probably means a
 git process crashed in this repository earlier. Make sure no other git
