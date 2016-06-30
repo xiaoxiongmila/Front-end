@@ -79,6 +79,34 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 ###参考链接
 [http://babeljs.io/docs/plugins/transform-class-properties/](http://babeljs.io/docs/plugins/transform-class-properties/ "http://babeljs.io/docs/plugins/transform-class-properties/")
 
+##React即使添加了key控制台却还是提示缺少key
+###解决方法
+尝试给添加key的父级容器添加key
+###参考链接
+[http://stackoverflow.com/questions/32256492/react-getting-key-prop-warning-even-though-key-is-set](http://stackoverflow.com/questions/32256492/react-getting-key-prop-warning-even-though-key-is-set "http://stackoverflow.com/questions/32256492/react-getting-key-prop-warning-even-though-key-is-set")
+
+##React报错Uncaught TypeError: Super expression must either be null or a function, not undefined
+
+###解决方法
+检查下是否有拼写错误
+
+###参考链接
+[http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or](http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or "http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or")
+
+###React报错
+ Error: Invariant Violation: setState(...): 
+ Cannot update during an existing state transition (such as within `render`). 
+ Render methods should be a pure function of props and state.
+###解决方法
+`onPress={this.goToUser(this.props.data.name)}`
+
+改为
+
+`onPress={()=>{
+   this.goToUser(this.props.data.name)
+  }}`
+###参考链接
+[https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html](https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html "https://skyline75489.github.io/post/2015-6-6_react-native-deck-for-github.html")
 #五、工具类
 ##GIT Bash尝试修改文件报错缺少类关键转换
 
