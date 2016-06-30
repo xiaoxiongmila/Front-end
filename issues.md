@@ -32,6 +32,18 @@ text-align:justify;text-justify:distribute;/*ie7-8*/
 ### 参考链接 ###
 [http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/](http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/ "http://www.zhangxinxu.com/wordpress/2015/08/chinese-english-same-padding-text-justify/")
 
+##获取div旋转缩放等真实的高度属性值等
+
+试过 
+    `function getStyle(obj, attr) {
+       return obj.currentStyle ? obj.currentStyle[attr] : getComputedStyle(obj)[attr];  }`
+并没什么用，用了jquery的height（)也没什么用
+
+最后偶然想到
+    ` var rect = test.getBoundingClientRect();
+    alert('width:' + rect.width + 'height:' + rect.height);`
+Bingo，真的可以。
+
 #二、PC端
 ##Div中放不下如何出现横向滚动条,然后一直排过去
 ###解决方法
@@ -93,10 +105,7 @@ HiDPI Canvas Polyfill 是针对设备提出的canvas高清解决方案，首先�
 ###参考链接
 [http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or](http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or "http://stackoverflow.com/questions/30116430/reactjs-giving-error-uncaught-typeerror-super-expression-must-either-be-null-or")
 
-###React报错
- Error: Invariant Violation: setState(...): 
- Cannot update during an existing state transition (such as within `render`). 
- Render methods should be a pure function of props and state.
+###React报错 Error: Invariant Violation: setState(...):  Cannot update during an existing state transition (such as within `render`).  Render methods should be a pure function of props and state.
 ###解决方法
 `onPress={this.goToUser(this.props.data.name)}`
 
